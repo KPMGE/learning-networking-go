@@ -16,7 +16,7 @@ func main() {
 
 	defer func() {
 		if err := listener.Close(); err != nil {
-			log.Fatal("err")
+			log.Fatal(err)
 		}
 	}()
 
